@@ -1,3 +1,8 @@
+/*
+  Name : Rakotojaona Nambinina
+  email : Andrianoelisoa.Rakotojaona@gmail.com
+  Description : Accessing bank example of state Machine 
+*/
 module access (
               clk,
               rst,
@@ -71,3 +76,45 @@ module access (
       endcase
     end 
 endmodule
+
+/*
+
+module tbAccess(
+
+    );
+    
+  reg clk;
+  reg rst;
+  reg tx;
+  reg [3:0] paswrd;
+  wire  access;
+     access dut(
+              clk,
+              rst,
+              tx,
+              paswrd,
+              access
+              );
+  
+  initial
+    begin
+      clk = 0;
+      rst = 1;
+      tx =0;
+      paswrd = 4'd3;
+      #10
+      rst =0;
+      #50
+      tx = 1;
+      #30
+      paswrd = 4'd5;
+    end 
+    
+  always
+    begin
+      #5 clk = ! clk;
+    end 
+  
+endmodule
+
+*/
